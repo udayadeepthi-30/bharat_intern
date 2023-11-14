@@ -1,0 +1,94 @@
+<html>
+    <style>
+         body{
+           height:2cm;
+            background-image: url('https://th.bing.com/th/id/OIP.aOANiLvmeN6kqcQsp98LkAHaE8?pid=ImgDet&w=779&h=520&rs=1');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: rgb(224, 247, 124);
+            text-align: center;
+            background-position-x: 0cm;
+            background-position-y: 2cm;
+            background-size: 50% 60%  ;
+            border:3px dashed #db33e7;
+            
+         }
+         input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+         button{
+            cursor: pointer;
+            background-color :palevioletred
+         }
+         button:hover {
+            background-color: #0056b3;
+        }
+         .container{
+            box-shadow: 0 0 10px rgba(233, 240, 14, 0.2);
+            background-color: whitesmoke;
+           
+            margin-left : 20cm;
+            margin-top: 10cm;
+            padding-top: 2cm;
+            padding-bottom: 2cm;
+            text-align: center;
+            
+         }
+         #result{
+            color: rgb(239, 14, 115);
+            font-weight: bolder;
+            font-size: xx-large;
+            font-family :cursive ;
+            font-style: italic ;
+         }
+         h1{
+            margin-top = 8cm;            
+            font-style: italic;
+         }
+         h2{
+            font-style:italic
+            font-family: cursive;
+            color:rgb(9, 83, 132)
+         }
+         .bold-input {
+            font-weight: bold;
+        }
+
+    </style>
+    <head>
+        <title>Celsious to Fahrenheit</title>
+    </head>
+    <body>
+        
+        <h1 style="color:rgb(85, 85, 239); font-size: 400% ;">Conversion to Fahrenheit</h1>
+        <div class = "container">
+           
+            <h2> for converting into fahrenheit... click on faren button</h2>
+            <br>
+            <input type="number" id="celsiusinput" style="width: 300px; height: 40px;"
+            class="bold-input" placeholder="enter the temperature in celsius
+            ">
+            <button onclick="faren()"   style="font-size: medium;">Faren</button>
+            <p id="result"></p>
+
+
+        </div>
+        <script>
+            function faren(){
+                const inputdata=document.getElementById("celsiusinput");
+                const resultElement=document.getElementById("result");
+                const data = parseFloat(inputdata.value);
+                if(isNaN(data)){
+                    resultElement.textContent = "please enter a valid number...";
+                } else {
+                    const deg = (data * 9/5) + 32;
+                    resultElement.textContent=`Result: ${data}°C  is  ${deg}°F`;
+                }
+                inputdata="";
+            }
+        </script>
+    </body>
+</html>
