@@ -1,0 +1,296 @@
+<html>
+    <style>
+        body {
+            
+            background-size: 100% 1000px;
+            background-repeat: no-repeat;
+            background-color: black;
+            
+        }
+        
+        .image{
+            margin: 0;
+            padding: 0;
+            background-image: url('netflix.png'); /* Set your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        p{
+            font-size: 0.8cm;
+        }
+        .firstpage{
+            text-align: center;
+            font-size: 0.8cm;
+            padding-top: 3cm;
+        }
+        .emailaddress{
+            margin-left: 12cm; 
+            font-size:0.9cm;    
+            color:   black                
+        }
+        #sign{
+            background-color: red;
+            color:white;
+        }
+       #getstarted{
+            margin-left: 1cm;
+            background-color:red;
+            font-size: 0.9cm;  
+            color:white;        
+        }
+        .english{
+            margin-left:35cm;           
+        }
+        .rectangular-box {
+            width: 1600px;
+            height: 15px;
+            background-color: #333; /* Blue background color */
+            border: 2px solid #333; /* Border style */
+            color: #fff; /* Text color */
+            text-align: center; /* Center text horizontally */
+            line-height: 100px; /* Center text vertically */
+        }
+        .rectangular-box1 {
+            margin-left: 10cm;
+            width: 1200px;
+            height: 100px;
+            font-size: 1cm;
+            background-color: #333; /* Blue background color */
+            border: 2px solid #333; /* Border style */
+            color: #fff; /* Text color */
+            text-align: center; /* Center text horizontally */
+            line-height: 100px; /* Center text vertically */
+        }
+        .box{
+            font-weight:bold;
+        }
+        #enjoy{
+            font-size: 1cm;
+            font-weight: 200;
+        }
+        #heading1{
+            color:white;
+            font-weight: bolder;
+            margin-left: 5cm;
+            font-size: 2cm;
+        }
+        #heading2{
+            color:white;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 0.8cm;
+            font-style: italic;
+        }
+        .box1 {
+            margin-left: 14.5cm;
+            margin-top:3cm;
+            width: 400px;
+            height: 500px;
+            background-color: #07f469;
+            border: 2px solid #1db8ec;
+            padding: 10px;
+            
+            opacity: 60%;
+            font-weight: 900;
+        }
+        .hidden-info {
+            display: none; /* Initially hide the information */
+        }
+        .innerbox{
+            margin-left:1.5cm;
+            margin-top: 0.5cm;
+            padding-left: 0.5cm;padding-right: 0.5cm;
+            padding-top: 0.5cm; padding-bottom: 0.5cm;
+            font-weight: bold;
+            font-size: larger;
+            background-color: rgb(240, 240, 154);
+            color:rgb(0, 66, 0);
+        }
+        .sign2{
+            padding-left: 0.5cm;padding-right: 0.5cm;
+            padding-top: 0.5cm; padding-bottom: 0.5cm;
+            color:white;
+            background-color: red;
+            margin-left:4cm;
+        }
+        .para1{
+            color:black;
+            background-color: blue;
+            opacity: 0%;
+        }
+        #checkbox{
+            opacity: 0%;
+            color:black;
+        }
+        .image2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 60%;
+            
+            margin-left:3cm;
+            margin-bottom: 3cm;
+            opacity: 80%;
+            position: absolute;
+            left: 100px; /* Adjust the value for X-coordinate */
+            top: 150px; /* Adjust the value for Y-coordinate */
+            
+        }
+    </style>
+    <head> 
+        <title>HOMEPAGE</title>
+    </head>
+    <body>
+        
+        <script>
+            function signin() {
+                var info = document.getElementById("info");
+                info.style.display = "block"; // Display the hidden information when clicked
+            }
+        </script>
+        <h1 style="text-align: center;font-size: 2cm;color:white;">WELL COME TO</h1>
+        <div class="image">
+            <img src="netflix1.jpeg"  class="image2 " alt="netflix logo" width="500px" height="400px">
+        </div>
+        
+        <div class="rectangular-box"></div>
+        <div class="english">
+            <select>
+                <option value="option1">English</option>
+                <option value="option2">Hindi</option>
+                <option value="option2">Telugu</option>
+                <!-- Add more <option> elements as needed -->
+            </select>
+            <button  id = "sign" onclick="signin()"> Sign in </button>
+        </div>ṅ
+        <div class="hidden-info" id="info">
+            <div class="box1">
+                <p style="font-size: 1cm; color:rgb(255, 0, 195); margin left:0.5cm;">Sign In</p>
+                <input type="text"  placeholder="enter email address" class="innerbox">
+                <input type="password" placeholder="enter password" class="innerbox"><br><br><br>
+                <button class="sign2" onclick="sign()">SignIn</button><br><br>
+                
+                <p style="text-align: center;font-size: small;">This page is protected by Google reCAPTCHA to ensure you are not a bot</p>
+            </div>
+            
+        </div>
+        <div class="firstpage">
+            <h1 style="color:rgb(30, 255, 0);">
+                Enjoy big movies, hit series and more from</h1>
+            <h1 style="color:rgb(30, 255, 0);"> ₹ 149.</h1>
+        </div>
+        <h1 style="color:rgb(248, 105, 2);text-align:center; font-size: 1cm;">Join today. Cancel anytime.</h1>
+        <h1 style="color:rgb(248, 105, 2);text-align:center; font-size: 0.9cm;">
+                Ready to watch? Enter your email to create or restart your membership.</h1>"
+        <div class="emailaddress">
+            <input type="text" class="box" style="width: 302px; height: 40px;"  placeholder="Email address">
+            <button id="getstarted">Get Started ></button>
+        </div>
+        
+            <br>            <br>            <br>            <br>            <br>            <br>
+            <div class="rectangular-box"></div>
+            <div class="secondpage">
+                <img src="tvimage.jpeg" alt="tv image" width="400px" height="200px" style="float:right">
+                <h1 id="heading1">Enjoy on your TV</h1>
+                <h2 id="heading2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+                <br><br><br><br><br><br>
+                <div class="rectangular-box"></div>
+                <br>    <br>                <br>                <br>                <br>                <br>
+                <img src="movie.jpeg" alt="movie download image" width="400px" height="200px" style="float:left">
+                <h1 id="heading1">Download your shows to watch offline</h1>
+                <h2 id="heading2">Save your favourites easily and always have something to watch.</h2>
+                <br><br><br><br><br><br>
+                <div class="rectangular-box"></div>
+                <br><br><br><br><br><br>
+                <img src="everywheretv.jpeg" alt="movie download image" width="400px" height="200px" style="float:right">
+                <h1 id="heading1">Watch everywhere</h1>
+                <h2 id="heading2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
+                <br><br><br><br><br><br>
+                <div class="rectangular-box"></div>
+                <br><br><br><br><br><br>
+                <img src="profile.jpeg" alt="movie download image" width="400px" height="200px" style="float:left">
+                <h1 id="heading1">Create profiles for kids</h1>
+                <h2 id="heading2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h2>
+                <br><br><br><br><br><br>
+                <div class="rectangular-box"></div>
+                <br><br><br><br><br><br>
+                <a href="#what is netflix" class="rectangular-box1" style="color:red;">What is Netflix</a><br>
+                <a href="#cost" class="rectangular-box1" style="color:orange;">How much does Netfilx Cost?</a><br>
+                <a href="#where" class="rectangular-box1" style="color:yellow;">Where can I Watch?</a><br>
+                <a href="#cancel" class="rectangular-box1" style="color:green;">How do I cancel?</a><br>
+                <a href="#watch" class="rectangular-box1" style="color:blue;">What can I watch on Netflix</a><br>
+                <a href="#kids" class="rectangular-box1" style="color:indigo">Is Netflix good for Kids?</a><br>
+                <a href="#help" class="rectangular-box1" style="color:violet">Help</a><br>
+                <div class="rectangular-box"></div>
+                <br><br>
+                <section id="what is netflix"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">What is Netflix?</h1>
+                    <br><br>
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries 
+                        and more – on thousands of internet-connected devices.
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+                        There's always something new to discover, and new TV shows and movies are added every week!</p>
+                        <br><br><br><br>
+                        <hr>
+                </section>
+                <br><br>
+                <section id="cost"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">How much does Netfilx Cost?</h1><br><br>
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee.
+                         Plans range from ₹ 149 to ₹ 649 a month.No extra costs, no contracts.</p>
+                         <br><br><br><br><hr>
+                </section>
+                <br><br>
+                <section id="where"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">Where can I Watch?</h1>
+                    <br><br>
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.
+                        com from your personal computer or on any internet-connected device that offers the Netflix app, 
+                        including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                        You can also download your favourite shows with the iOS, Android, or Windows 10 app. 
+                        Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                        <br><br><br><br><hr>
+                </section>
+                <br><br>
+                <section id="cancel"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">How do I cancel</h1>
+                    <br><br>
+                    <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. 
+                        There are no cancellation fees – start or stop your account anytime.</p>
+                        <br><br><br><br><hr>
+                </section>
+                <br><br>
+                <section id="watch"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">What can I watch on Netflix</h1>
+                    <br><br>
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more.
+                         Watch as much as you want, anytime you want.</p>
+                         <br><br><br><br><hr>
+                </section>
+                <br><br>
+                <section id="kids"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">Is Netflix good for Kids?</h1>
+                    <br><br>
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the 
+                        maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                        <br><br><br><br><hr>
+                </section>
+
+                <br><br>
+                <section id="help"  style="color:white; font-size: large;text-align: center;">
+                    <h1 style="font-size: 1.2cm;">Help</h1>
+                    <br><br>
+                    <p>official webste help for netflix is: https://help.netflix.com/en</p>
+                        <br><br><br><br>
+                </section>
+
+                <br><br><br><br>
+
+            </div>
+    </body>
+</html>
